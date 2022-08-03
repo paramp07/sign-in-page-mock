@@ -13,10 +13,28 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    margin: 10px 30px;
+    align-items: center;
+    margin: 27px 50px;
 
 }
 
 .nav-buttons {
     display: flex;
+    gap: 10px;
+    height: fit-content;
 }
+
+.light {
+    color: rgb(3, 20, 29)7, 37, 37);
+    border: 2px solid rgba(192, 192, 192, .3);
+    
+}
+
+.link {
+    color: rgb(82, 82, 82);
+}
+
+.link:hover {
+    color: rgb(1, 4, 32);
+}
+
