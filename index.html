@@ -11,12 +11,14 @@
 </head>
 <body>
     <header>
+        <div class="header">
         <div class="logo">
-            <img src="bigger.svg" alt="logo" width="50px">
+            <img src="bigger.svg" alt="logo" width="50px" >
         </div>
         <div class="nav-buttons">
             <button class="btn btn-default link">New to Reveal?</button>
             <button class="btn btn-default light">Create an account</button>
+        </div>
         </div>
     </header>
     <main>
@@ -24,29 +26,38 @@
             <h1> Sign In</h1>
             <div class="sign-in-btns">
                 <button class="btn btn-primary">Sign In using Open ID Connect</button>
-                <button class="btn btn-light">or sign in with your email</button>
+                <p id="special">or sign in with your email</p>
             </div>
             <div class="input">
                 <form action="">
                     <section class="email">
                         <label for="useremail">Email address</label>
-                        <input type="email" name="email" id="useremail" placeholder="Enter your email">
+                        <input type="email" name="email" id="useremail" class="form-control" placeholder="Enter your email">
                     </section>
                     <section class="password">
-                        <label for="userpass">Password</label>
-                        <input type="password" name="password" id="userpass" placeholder="Enter your password">
+                        <div class="idk">
+                            <label for="userpass">Password</label>
+                            <p class="highlight-blue">Forgot password?</p>
+                        </div>
+                        <input type="password" name="password" id="userpass" class="form-control" placeholder="Enter your password">
                     </section>
-
+                    <section>
+                        <button type="submit" class="btn btn-success">Sign In</button>
+                    </section>
                 </form>
             </div>
         </section>
     </main>
     <footer>
+        <div class="footer">
         <p>@ 2022 Reveal Designs Limited.</p>
+        <div id="extras">
         <a href="">Terms</a>
         <a href="">Privacy</a>
         <a href="">Security</a>
         <a href="">Get in touch</a>
+        </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -8,14 +8,22 @@
 
 body {
     font-family: 'Catamaran';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 27px 50px;
+    
+}
 
+header {
+    box-shadow: 0px 0px 10px 3px rgba(84, 84, 84,.1);
 }
 
 .nav-buttons {
@@ -25,8 +33,14 @@ header {
 }
 
 .light {
-    color: rgb(3, 20, 29)7, 37, 37);
+    color: rgb(3, 20, 29);
     border: 2px solid rgba(192, 192, 192, .3);
+    transition: all .5s ease;
+
+}
+
+.light:hover {
+    border-color: rgb(198, 197, 197);
     
 }
 
@@ -38,3 +52,128 @@ header {
     color: rgb(1, 4, 32);
 }
 
+main {
+    width: 20rem;
+    height: 30rem;
+    margin: 70px auto;
+    margin-top: 0;
+}
+
+.sign-in {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+}
+
+.sign-in-btns button {
+    word-spacing: 2px;
+    
+}
+
+.sign-in-btns button, p {
+    margin-top: 24px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+#special:before {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 2px;
+    background: rgba(47, 47, 47,.1);
+    left: 0;
+    top: 13px;
+    position: relative;
+  }
+  
+#special:after {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 2px;
+    background: rgba(47, 47, 47,.1);
+    left: 77%;
+    top: -13px;
+    position: relative;
+  }
+
+.input section {
+    display: flex;
+    flex-direction: column;
+}
+
+.input section label {
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+.form-control {
+    border-radius: 5px;
+    border-color: rgba(203, 203, 203, .4);
+    border-width: 2px;
+    margin-bottom: 19px;
+}
+
+.form-control::selection {
+    border-color: aqua;
+}
+
+.idk {
+    display: flex;
+    justify-content: space-between;
+}
+
+.idk p {
+    width: auto;
+}
+.highlight-blue {
+    cursor: pointer;
+}
+
+.highlight-blue {
+    margin: 0;
+    font-weight: 400;
+    color: rgb(25, 163, 255);
+}
+
+.btn-success {
+    margin-top: 10px;
+    background-color: rgb(33, 109, 176);
+    font-weight: 600;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: rgb(18, 80, 134);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 10px 60px 35px 60px;
+    
+}
+
+footer p {
+    width: auto;
+}
+
+#extras {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+#extras a {
+    text-decoration: none;
+}
+
+footer {
+    border-top: 1px solid rgba(94, 94, 94,.1);
+}
